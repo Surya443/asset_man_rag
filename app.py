@@ -40,8 +40,7 @@ Helpful answer:
 
 prompt = PromptTemplate(template=prompt_template, input_variables=["question", "context"])
 
-
-#embeddings = SentenceTransformerEmbeddings(model_name="llmware/industry-bert-insurance-v0.1")
+#embeddings = SentenceTransformerEmbeddings(model_name="llmware/industry-bert-asset-management-v0.1"
 embeddings = HuggingFaceEmbeddings(model_name="baconnier/Finance_embedding_large_en-V0.1")
 
 ## Loading the VectorStore
