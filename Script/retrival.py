@@ -7,7 +7,7 @@ from langchain.prompts import PromptTemplate
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 ## Loading the Embedding Transformer
 
-#embeddings = SentenceTransformerEmbeddings(model_name="llmware/industry-bert-insurance-v0.1")
+#embeddings = SentenceTransformerEmbeddings(model_name="llmware/industry-bert-asset-management-v0.1")
 embeddings = HuggingFaceEmbeddings(model_name="baconnier/Finance_embedding_large_en-V0.1")
 
 ## Creating the Prompt Template
