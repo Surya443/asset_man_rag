@@ -1,6 +1,7 @@
 Retrieval model to efficiently search and retrieve pertinent information from vector store, subsequently integrating llmware BLING models to generate tailored responses.
 
 ## Directory Structure
+'''
 .
 ├── Data/                      # Folder containing the PDF file
 ├── stores/                    # Folder where the vector store is persisted
@@ -10,3 +11,5 @@ Retrieval model to efficiently search and retrieve pertinent information from ve
 ├── app.py                     # Main application script                 
 ├── requirements.txt           # Python dependencies
 └── README.md                  # This file
+
+'''
