@@ -11,10 +11,12 @@ from langchain.embeddings import SentenceTransformerEmbeddings
 import streamlit as st 
 
 ## Settings-Configuration-> HuggingFace
+# Under Inference check box 'Make calls to the serverless Inference API'.
+# Under Repos check box 'Write access to contents/settings of all repos under your personal namespace'.
 load_dotenv()
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.environ.get("HUGGINGFACEHUB_API_TOKEN")
 
-## UI Configuration
+## UI Config
 st.set_page_config(page_title="RAG Implementation - Asset Management  Domain Data")
 st.title("Asset Management Retrieval Augmented Generation Implementation")
 
@@ -38,7 +40,7 @@ Helpful answer:
 
 prompt = PromptTemplate(template=prompt_template, input_variables=["question", "context"])
 
-## Laoding the Transformers
+
 #embeddings = SentenceTransformerEmbeddings(model_name="llmware/industry-bert-insurance-v0.1")
 embeddings = HuggingFaceEmbeddings(model_name="baconnier/Finance_embedding_large_en-V0.1")
 

@@ -30,7 +30,7 @@ load_vector_store = Chroma(persist_directory="stores/4cosine", embedding_functio
 
 ## Retrival of Chunks with k-setting-> 3
 docs = load_vector_store.similarity_search_with_score(query=query, k=3)
-docs = load_vector_store.similarity_search_with_score(query=query, k=3)
+#docs = load_vector_store.similarity_search_with_score(query=query, k=3)
 for i in docs:
     doc, score = i
     print({"score": score, "content": doc.page_content, "metadata": doc.metadata})
